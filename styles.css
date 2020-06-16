@@ -1,0 +1,223 @@
+/* common css used throught */
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+  overflow-y: scroll;
+  background-color: #ecfbfc;
+}
+hr {
+  color: #dfddc7;
+  border-style: dotted none none;
+  width: 5%;
+  border-width: 0.4em;
+}
+.padding-prop{
+  padding:3% 5% 3% 5%;
+}
+.center{
+  text-align: center;
+}
+.btn{
+  font-family: 'Open Sans', sans-serif;
+}
+.center-h{
+  font-family: 'Cookie', cursive;
+  padding: 0 0 30px 0;
+  text-align: center;
+  color: #12947f;
+  font-size: 3rem;
+
+}
+.head-2{
+  font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  color:#00263b;
+}
+.body-1{
+  font-family: 'Merriweather', serif;
+  font-size: 1.2rem;
+  color: #127681;
+}
+.body-2{
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #204051;
+}
+.lang-table, .table-ab-1, .table-ab-2{
+position: relative;
+margin: auto;
+}
+
+/*styles for the top video section */
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.section-text{
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5%;
+  color: #beebe9;
+}
+.section-1-hello{
+  font-size: 5rem;
+  font-family: 'Great Vibes', cursive;
+}
+.section-1-name{
+  font-size: 4rem;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 0;
+}
+.section-1-caption{
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.section-1-button{
+  position: absolute;
+  height:4rem;
+  width: 5rem;
+  bottom: 0;
+  right:50px;
+  background-color: #000000;
+}
+.section-1-button:hover{
+  padding-bottom: 5px;
+  background-color: #beebe9;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+/* stles for the nav bar */
+nav{
+  background-color: #000;
+  opacity:0.7;
+  border-bottom: 1.5px solid #00bcd4;
+}
+
+/* styles for the about section */
+.imgs{
+  display: block;
+  width:200px;
+  height:auto;
+  margin: 0 auto 30px auto;
+  border-radius: 50%;
+  border: 5px solid #beebe9;
+  visibility: hidden;
+  position: absolute;
+}
+.section-padding{
+  margin-top: 60px;
+}
+
+/* styles for the stars */
+.td-length-1{
+  width:150px;
+}
+.td-length-2{
+  width:150px;
+  text-align: right;
+}
+.icon-custom-1, .icon-custom{
+  color:  #28c3d4;
+  padding: 0 0 0 1%;
+}
+#hov1:hover .ic1, #hov2:hover .ic2, #hov3:hover .ic3,#hov4:hover .ic4,#hov5:hover .ic5, #hov6:hover .ic6, #hov7:hover .ic7, #hov8:hover .ic8, #hov9:hover .ic9 {
+  padding-left: 2.4%;
+}
+#hov11:hover .ic11, #hov12:hover .ic12, #hov13:hover .ic13, #hov14:hover .ic14, #hov15:hover .ic15, #hov16:hover .ic16, #hov17:hover .ic17, #hov18:hover .ic18, #hov19:hover .ic19, #hov110:hover .ic110 {
+  padding-left: 2.4%;
+}
+#hov21:hover .ic21, #hov22:hover .ic22, #hov23:hover .ic23{
+  padding-left: 2.4%;
+}
+
+/* styles for the project section */
+#projects .container{
+  padding-bottom: 40px;
+}
+.p-container{
+  /* position: relative; */
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.p-image{
+  margin-left: 10px;
+  float: right;
+  width: 30%;
+  height:auto;
+}
+
+
+/* footer styles */
+.footer {
+  padding-top:40px;
+  width: 100%;
+  text-align: center;
+  background-color: #aee7e8;
+}
+.quote{
+  font-family: 'Cookie', cursive;
+  font-size: 2rem;
+}
+.footer-p-social {
+  color: #348498;
+  text-align: center;
+  display: inline-block;
+  margin: 3% 5% 2% 5%;
+}
+
+.f-note {
+  font-family: 'Open Sans', sans-serif;
+  padding-top: 30px;
+  color: #348498;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
